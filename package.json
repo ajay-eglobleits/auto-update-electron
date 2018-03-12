@@ -1,0 +1,30 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/ajay-eglobleits/auto-update-electron/",
+  "scripts": {
+        "build": "build --win",
+        "ship": "build --win -p always"
+    },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "~1.8.2",
+    "electron-builder": "^20.4.1"
+  },
+  "dependencies": {
+    "electron-updater": "^2.21.0"
+  }
+}
