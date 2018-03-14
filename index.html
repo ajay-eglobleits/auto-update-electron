@@ -1,22 +1,11 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
 
+<head>
+    <title>Electron AutoUpdater</title>
+</head>
+
+<body>
     <script>
-      // You can also require other files to run in this process
-      require('./renderer.js')
-    </script>
-
-       <script>
         const ipcRenderer = require('electron').ipcRenderer;
         // wait for an updateReady message
         ipcRenderer.on('updateReady', function(event, text) {
@@ -29,6 +18,6 @@
     <!-- the button onClick sends a quitAndInstall message to the electron main process -->
     <button id="ready" onClick="ipcRenderer.send('quitAndInstall')">no updates ready</button>
 
-    
-  </body>
+</body>
+
 </html>
